@@ -14,7 +14,7 @@ function discount(sumGross){
             discountNumber.innerHTML=form["realDiscount"].value;
             console.log("After Discount"+ resultSum);
             let grosstotalAmount=document.getElementById("grosstotal");
-            grosstotalAmount.innerHTML=resultSum;
+            grosstotalAmount.innerHTML=resultSum.toFixed(2);
             let totalAmountAll=document.getElementById("total-amount2");
              totalAmountAll.innerHTML="₹"+(resultSum).toFixed(2);
         }
@@ -40,7 +40,7 @@ function discount(sumGross){
     }
     // Here we will add the in the Taxable Value
     let taxAbleValue=document.getElementById("taxAbleValue");
-    taxAbleValue.innerHTML=grossAfterDiscount;
+    taxAbleValue.innerHTML=grossAfterDiscount.toFixed(2);
     allThetaxes(grossAfterDiscount);
 }
 
