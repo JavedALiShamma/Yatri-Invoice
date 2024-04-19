@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yatri Invoice</title>
+</head>
+<body>
+<div class="print-content" id="print-content">
+    <div id ="main-container"class= "main-conatiner display-off">
+        <button class="print submit" id="print">Print</button>
+        <h2> TAX INVOICE </h2> 
+        <div class="company-details">
+            <div class="company-deatils-left" id="company-details-left">
+            <b>Company Name:- MAHARAJA MOTORS</b><br>
+            ADRESS:-<b>RAMA KUTTI NEAR RAJASTHAN PATRIKA</b><br>
+            GAJNER ROAD,BIKANER,Rajasthan, 334001<br>
+            State Code:- RJ<br>
+            <b> GSTIN: 08AJGPN9313A1ZF<b>
+            </div>
+            <div class="company-details-right" id="company-details-right">
+                Invoice No: <br>
+                Invice Date:<br>
+                Destination: BIKANER
+            </div>
+        </div>
+        <h4>Product Supplied</h4>
+        <div class="product-supplied">
+            <div class="product-supplied-left">
+        <b>Billing Address<br>
+            <div class="billing-Address-area">
+            <span class="billing-address" id="billing-address1"></span></b>
+            <span>Pincode :</span><span class="" id="citypincode"></span>
+            <span>Mobile NO</span><span id="customer-mobileNo"></span>
+        </div>
+        </div>
+        <div class="product-supplied-right">
+            <b>Mode/Terms of Payment</b><br>
+              <span id="modetrans"></span>
+        </div>
+        </div>
+        <hr>
+        <h5>Product Supplied</h5>
+    <section class="table-container" id="table-container">
+        <!-- <button class="print">Print</button> -->
+        <table class="billing-table" id="billing-table">
+            <thead class="main-head-row" id="main-head-row">
+                <!-- This is main head row -->
+                <th class="srNo" id="srNo">SrNo</th>
+                <th class="product-name" id="product-name">Description of Goods</th>
+                <th class="HSN" id="HSN">HSN/SAC</th>
+                <th class="quanity" id="quantity">Quantity</th>
+                <th class="rate" id="rate">Rate</th>
+                <th class="per" id="per">Per</th>
+                <th class="amount" id="amount">Amount</th>
+                <th class="discount" id="discount">Discount</th>
+                <th class="gross-total" id="gross-total">Gross Total</th>
+                <th class="CGST" id="CGST">CGST</th>
+                <th class="SGST" id="SGST">SGST</th>
+                <th class="IGST" id="IGST">IGST</th>
+            </thead>
+            <tbody class="main-body-row" id="main-body-row">
+                <tr class="blank-space-row" id="blank-space-row1">
+                    <td>1</td>
+                    <td id="product-name1"><b>MODEL:</b> 
+                        <span class="vehicle-name1" id="vehicle-name"></span>
+                        <span><b>MOTOR NO</b></span>
+                        <span class="motor-no" id="mmotor"></span>
+                    
+                        <span>CHASSIS NO:</span>
+                        <span class="chasisNo" id="chasisNumber"></span>
+                        <span>COLOR :</span><span class="colorname" id="colorname"></span>
+                        
+                        <span>Battery No</span><span class="battery-no" id="battery-number"></span></td>
+                    <td>1548122</td>
+                    <td id="quantity-number">1</td>
+                    <td id="product-price"></td>
+                    <td>PER</td>
+                    <td id="total-amount"></td>
+                    <td >0%</td>
+                    <td id="grosstotal"></td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr class="total-value" id="total-value">
+                    <td class="blank"></td>
+                    <td class="total-sum" id="total-sum">Total</td>
+                    <td class="blank"></td>
+                    <td class="total-quantity" id="total-quantity">PCS</td>
+                    <td class="blank"></td>
+                    <td class="blank"></td>
+                    <td class="total-amount" id="total-amount2">@</td>
+
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section class="down-table">
+        <div class="invoice-terms">
+            <div class="invoice-details">
+                Invoice Terms:
+                <br>
+                
+                1 All Dispute Subject to Bikaner Jurisdication.<br>
+                2. Any Outstanding amount chargeable @ 18 %p.a
+            </div>
+            <div class="invoice-table">
+                <table class="invoice-table1">
+                    <tr>
+                        <td>Taxable value</td>
+                        <td>174850</td>
+                    </tr>
+                    <tr>
+                        <td>Tax</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>LESS FAME -ii SUBSIDY</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>174850.00</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <h4 class="signature"> Authorised Signature</h4>
+    </section>
+  </div>
+    <section class="form-section" id="form-section">
+        <form action="" class="main-form my-2" id="main-form">
+            <h3> Product Detail's</h3>
+        <div class="model-replace">
+           
+            <label for="modelName"> Model Name</label>
+            <select name="model-name" id="modelName">
+                <option value="yatri-super">Yatri Super</option>
+                <option value="E-cart">E-cart</option>
+                <option value="Yatri-DLX">yatri DLX</option>
+                <option value="other">Other</option>
+            </select>
+            <div id="new-add-element">
+                <!-- <label for="newElement"> Product-Name</label>
+                <input type="text" name="newElement" id=""> -->
+            </div>
+         
+            <label for="color-name"> Color :</label>
+            <input type="text" name="color" id="color-name" placeholder="Enter the color">
+            <label for="chassisNumber"> Chassis Number</label>
+            <input type="text" placeholder="Chassis number " name="chassisNumber">
+            <label for="motorNumber">Motor Number</label>
+            <input type="text" placeholder="motor-number" name="motorNumber">
+            <label for="batteryNumber"> Battery Number</label>
+            <input type="text" placeholder="Battery number of the vehicle" name="batteryNumber">
+            <label for="price">Price</label>
+            <input type="number" name="price" placeholder="Price of the vehicle">
+            <label for="qunatityPro">Quantity</label>
+            <input type="number" name="qunatityPro" placeholder="Quantity of the vehicle" required >
+        </div>
+            <h3> Customer's Details</h3>
+            <div class="customer-details-section">
+                <label for="customer-name"> Customer Name</label>
+                <input type="text" name="customer-name" placeholder="Enter the name of the customer">
+                <label for="customerAddress"> Customer Address</label>
+                <input type="text" name="customerAddress" id="" placeholder="Enter the Address of the customer" ></textarea>
+                <label for="city">City</label>
+                <input type="text" name="city" id="" placeholder="example - Bikaner"> 
+                <label for="pincode">Pincode</label>
+                <input type="number" name="pincode" id="" placeholder="Enter customer city pincode">
+                <label for="modePayment"> Mode of Payment</label>
+                <input type="text" name="modePayment" id="mode-payment">
+                <label for="customerMobile">Mobile No</label>
+                <input type="tel" placeholder="Customer mobile Number" name="customerMobile" maxLength="10">
+            </div>
+            <button class="submit my-2" id="submit">Submit</button>
+        </form>
+    </section>
+  
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

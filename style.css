@@ -1,0 +1,254 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.print-content{
+    /* margin: 1%; */
+    width: 95vw;
+    height: auto;
+    /* overflow-y: scroll; */
+    display: inline-block;
+    border: 2px solid black;
+}
+.main-conatiner{
+    padding-left: 5px;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.blank{
+    border: none;
+}
+h2{
+    text-align: center;
+}
+table{
+    /* display: inline-block; */
+    
+    width: 100%;
+/*    
+    border-collapse: collapse;
+    display: inline-block;
+    border: 2px solid black; */
+}
+
+#table-container{
+    width: auto;
+    height: auto;
+    /* border: 20px solid rebeccapurple; */
+    /* padding-left: 5px; */
+ 
+    /* background-color:yellowgreen; */
+}
+.billing-table{
+    width: 99%;
+    height: auto;
+    border: 1px solid black;
+    /* border: 20px solid red; */
+}
+.down-table{
+    margin-top: 10px;
+}
+td span{
+    max-width: 150px;
+    word-wrap: break-word;
+    /* max-height: 400px; */
+}
+span{
+    word-wrap: break-word;
+}
+.billing-Address-area{
+    /* font-size: small; */
+    max-width: 400px;
+}
+th{
+    width: auto;
+    border: 1px solid black;
+    font-size: x-small;
+    word-wrap: wrap;
+    /* text-align: center; */
+}
+td{
+    width: auto;
+    border: 1px solid black;
+    font-size: small;
+    word-wrap: wrap;
+    /* text-align: center; */
+ 
+}
+.blank-space-row{
+    height:auto;
+    margin: 0;
+    padding: 0;
+    text-align:start;
+}
+
+.form-section{
+    width: 90vw;
+    height: auto;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    overflow: hidden;
+    border: none;
+    color: rgb(48, 46, 46);
+    display: inline-block;
+    /* flex-direction: column; */
+    /* display: inline-block !important; */
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.company-details{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 100%;
+    padding-left: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.product-supplied{
+    padding-left: 5px;
+    width:100%;
+    height: auto;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    display: flex;
+}
+.product-supplied-left{
+    width: 50%;
+    height: auto;
+    /* border: 2px solid red; */
+}
+.product-supplied-right{
+    padding-right:30px;
+    font-weight: 300;
+    text-align: right;
+    width: 50%;
+    height: auto;
+    /* border: 2px solid green; */
+}
+h4{
+    text-align: center;
+}
+.invoice-terms{
+    width: 100%;
+    display: flex;
+}
+.invoice-details{
+    font-weight: 300;
+    /* margin-top: 20px; */
+    width: 50%;
+    height: auto;
+    /* border: 1px solid red; */
+}
+.invoice-table{
+    padding-left: 20px;
+    margin-top: 1px;
+    width: 50%;
+    /* border: 1px solid green; */
+    height: auto;
+}
+.invoice-table1 td{
+    width: 50%;
+    border: 1px solid black;
+    font-size: small;
+}
+.signature{
+    margin-right: 30px;
+    margin-top: 30px;
+    text-align: end !important;
+}
+.company-deatils-left{
+    width: 50%;
+    /* border: 2px solid red; */
+    height: 100%;
+}
+.company-details-right{
+    margin-right:80px ;
+    text-align: start;
+    width: 200px;
+    height: 100%;
+    /* border: 2px solid blue; */
+}
+.customer-details-section{
+    width: 60%;
+    padding: 10px;
+    /* justify-content: center; */
+    border-radius: 10px;
+    /* height: 300px; */
+    /* height: auto; */
+    box-shadow: 10px 10px 10px grey;
+    border: 4px solid grey;
+    background-color: #e7e7e7;
+    display: flex;
+    flex-direction: column;
+}
+textarea{
+    width: fit-content;
+}
+.display-off{
+    display: none;
+}
+span{
+    font-weight: 600;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2px;
+    /* justify-content: space-around; */
+}
+form>input{
+    width: 300px;
+}
+#product-name1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: none;
+}
+.main-form{
+    width: 70%;
+    height: auto;
+    background-color:#e7e7e7;
+    padding: 20px;
+    margin-left: 20%;
+    margin-top: 5%;
+    display: inline-block;
+}
+.model-replace{
+    width: 60%;
+    padding: 10px;
+    /* justify-content: center; */
+    border-radius: 10px;
+    /* height: 300px; */
+    /* height: auto; */
+    box-shadow: 10px 10px 8px grey;
+    border: 4px solid grey;
+    background-color: #e7e7e7;
+    display: flex;
+    flex-direction: column;
+}
+.submit{
+    width: fit-content;
+    padding: 10px;
+    background-color: rgba(0, 0, 255, 0.658);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-left: 20%; 
+}
+.billing-Address-area{
+    display: flex;
+    flex-direction: column;
+}
+.main-head-row{
+    /* width: 100%;
+    border:20px solid red !important; */
+}
