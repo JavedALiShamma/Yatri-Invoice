@@ -65,13 +65,14 @@ span{
 }
 th{
     width: auto;
-    border: 1px solid black;
+    border: 1px solid black ;
     font-size: x-small;
     word-wrap: wrap;
     /* text-align: center; */
 }
 td{
     width: auto;
+    max-width: 100px;
     border: 1px solid black;
     font-size: small;
     word-wrap: wrap;
@@ -251,4 +252,20 @@ form>input{
 .main-head-row{
     /* width: 100%;
     border:20px solid red !important; */
+}
+.billing-Address-area{
+    font-size: 10px;
+}
+input[type="radio"]{
+    display: none;
+}
+input[type="radio"]:checked +label{
+    background-color:#2b6ad6;
+    border-radius: 2px;
+}
+.box{
+    width: auto;
+    border: 1px solid black !important;
+    font-size: x-small;
+    word-wrap: wrap;
 }
