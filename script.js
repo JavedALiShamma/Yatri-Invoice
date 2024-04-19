@@ -106,9 +106,14 @@ form.addEventListener("submit",function(e){
     
     
     // Here we have the gross total now we can add the gross total of the elements
-    allThetaxes(sumGross);
-    let totalAmountAll=document.getElementById("total-amount2");
-    totalAmountAll.innerHTML="₹"+sumGross;
+    // INVOICE DETAILS 
+    let invoiceDate=document.getElementById("invoiceDate");
+    let formatedDate=formatDate(form["invoiceDate"].value);
+
+    invoiceDate.innerHTML=formatedDate;
+    let invoiceNumber=document.getElementById("invoiceNumber");
+    invoiceNumber.innerHTML=form["invoiceNumber"].value;
+    
     /// Here we need to add the data of coustomer
     let cusAddress=form.customerAddress.value;
     // console.log(cusAddress);
@@ -151,14 +156,9 @@ function addNewField(){
 /// here we need to print
 let print=document.getElementById("print");
 print.addEventListener("click",function(e){
+   print.remove();
     window.print();
-    // // Here we are toggling both the section again
-    // let printContent=document.getElementById("print-content");
-    // printContent.classList.toggle("display-off");
-    // let formSection=document.getElementById("form-section");
-    // formSection.classList.toggle("display-off");
-    // let mainContainer=document.getElementById("main-container");
-    // mainContainer.classList.toggle("display-off");
+ 
 
 });
 // Here we will extract the mobile number of the customer 
@@ -179,3 +179,13 @@ function extractdomy(result){
 }
 // Here we need to see whether the information is saved or not 
 
+// Here we will format the date 
+function formatDate(inputDate) {
+    // Split the input date string by '-'
+    var parts = inputDate.split('-');
+    
+    // Rearrange the parts to the desired format 'dd-mm-yyyy'
+    var formattedDate = parts[2] + '-' + parts[1] + '-' + parts[0];
+    
+    return formattedDate;
+};

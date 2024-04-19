@@ -21,7 +21,10 @@
 .blank{
     border: none;
 }
-h2{
+h5{
+    text-align: center;
+}
+h6{
     text-align: center;
 }
 table{
@@ -54,6 +57,7 @@ table{
 td span{
     max-width: 150px;
     word-wrap: break-word;
+    font-size: 9px;
     /* max-height: 400px; */
 }
 span{
@@ -76,6 +80,7 @@ td{
     border: 1px solid black;
     font-size: small;
     word-wrap: wrap;
+    font-size: 9px;
     /* text-align: center; */
  
 }
@@ -87,7 +92,7 @@ td{
 }
 
 .form-section{
-    width: 90vw;
+    width: 80vw;
     height: auto;
     background-color: whitesmoke;
     border-radius: 20px;
@@ -95,6 +100,8 @@ td{
     border: none;
     color: rgb(48, 46, 46);
     display: inline-block;
+    font-size: 14px;
+   
     /* flex-direction: column; */
     /* display: inline-block !important; */
     /* align-items: center; */
@@ -105,8 +112,9 @@ td{
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     width: 100%;
+    font-size: 12px;
     padding-left: 20px;
-    padding: 10px;
+    /* padding:10px; */
     display: flex;
     justify-content: space-between;
 
@@ -118,6 +126,7 @@ td{
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     display: flex;
+    font-size: 12px;
 }
 .product-supplied-left{
     width: 50%;
@@ -130,6 +139,7 @@ td{
     text-align: right;
     width: 50%;
     height: auto;
+    font-size: 12px;    
     /* border: 2px solid green; */
 }
 h4{
@@ -141,6 +151,7 @@ h4{
 }
 .invoice-details{
     font-weight: 300;
+    font-size: 10px;
     /* margin-top: 20px; */
     width: 50%;
     height: auto;
@@ -159,8 +170,8 @@ h4{
     font-size: small;
 }
 .signature{
-    margin-right: 30px;
-    margin-top: 30px;
+    margin-right: auto;
+    margin-top: 20px;
     text-align: end !important;
 }
 .company-deatils-left{
@@ -218,7 +229,8 @@ form>input{
     width: 70%;
     height: auto;
     background-color:#e7e7e7;
-    padding: 20px;
+    /* padding: 20px; */
+
     margin-left: 20%;
     margin-top: 5%;
     display: inline-block;
@@ -268,4 +280,7 @@ input[type="radio"]:checked +label{
     border: 1px solid black !important;
     font-size: x-small;
     word-wrap: wrap;
+}
+.align-center{
+    text-align: center;
 }

@@ -13,7 +13,7 @@
 <div class="print-content" id="print-content">
     <div id ="main-container"class= "main-conatiner display-off">
         <button class="print submit" id="print">Print</button>
-        <h2> TAX INVOICE </h2> 
+        <h5> TAX INVOICE </h5> 
         <div class="company-details">
             <div class="company-deatils-left" id="company-details-left">
             <b>Company Name:- MAHARAJA MOTORS</b><br>
@@ -23,12 +23,12 @@
             <b> GSTIN: 08AJGPN9313A1ZF<b>
             </div>
             <div class="company-details-right" id="company-details-right">
-                Invoice No: <br>
-                Invice Date:<br>
+                Invoice No: <span id="invoiceNumber"></span> <br>
+                Invice Date: <span id="invoiceDate"></span> <br>
                 Destination: BIKANER
             </div>
         </div>
-        <h4>Product Supplied</h4>
+        <h6>Product Supplied</h6>
         <div class="product-supplied">
             <div class="product-supplied-left">
         <b>Billing Address<br>
@@ -45,7 +45,7 @@
         </div>
         </div>
         <hr>
-        <h5>Product Supplied</h5>
+        <h6>Product Supplied</h6>
     <section class="table-container" id="table-container">
         <!-- <button class="print">Print</button> -->
         <table class="billing-table" id="billing-table">
@@ -122,11 +122,11 @@
                 <table class="invoice-table1">
                     <tr>
                         <td>Taxable value</td>
-                        <td>174850</td>
+                        <td class="align-center" id="taxAbleValue"></td>
                     </tr>
                     <tr>
-                        <td>Tax</td>
-                        <td></td>
+                        <td >Tax</td>
+                        <td class="align-center" id="totalTax"></td>
                     </tr>
                     <tr>
                         <td>LESS FAME -ii SUBSIDY</td>
@@ -137,20 +137,27 @@
                         <td></td>
                     </tr>
                     <tr>
-                        <td>Total</td>
-                        <td>174850.00</td>
+                        <td class="align-center">Total</td>
+                        <td class="align-center" id="totalValueOfProduct"></td>
                     </tr>
                 </table>
             </div>
         </div>
-        <h4 class="signature"> Authorised Signature</h4>
+        <h6 class="signature"> Authorised Signature</h6>
     </section>
   </div>
+
+
+  <!--  Here Form Section started -->
+  <!-- -------------------------------------------- -->
     <section class="form-section" id="form-section">
         <form action="" class="main-form my-2" id="main-form">
             <h3> Product Detail's</h3>
         <div class="model-replace">
-           
+            <label for="invoiceNumber">Invoice Number</label>
+            <input  type="text" class="invoiceNumber" id="invoiceNumber">
+            <label for="invoiceDate">Invoice Date</label>
+            <input required type="date" id="invoiceDate">
             <label for="modelName"> Model Name</label>
             <select name="model-name" id="modelName">
                 <option value="yatri-super">Yatri Super</option>
@@ -201,7 +208,7 @@
                 <label for="modePayment"> Mode of Payment</label>
                 <input type="text" name="modePayment" id="mode-payment" placeholder="Enter Mode of Payment">
                 <label for="customerMobile">Mobile No</label>
-                <input type="tel" placeholder="Customer mobile Number" name="customerMobile" maxLength="10">
+                <input required type="tel" placeholder="Customer mobile Number" name="customerMobile" maxLength="10">
                 <!--  Here lastly we try to add Discount -->
                 <label for="realDiscount">Discount</label>
                 <input type="Number" id="realDiscount" placeholder="Please Select the mode of Discount" >
