@@ -90,9 +90,20 @@ td{
     padding: 0;
     text-align:start;
 }
+#print{
+    width: 120px;
+    height: 40px;
+    background-color:blue;
+    margin-left: 30%;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
 
+}
 .form-section{
     width: 80vw;
+    margin-left: 10%;
     height: auto;
     background-color: whitesmoke;
     border-radius: 20px;
@@ -189,6 +200,7 @@ h4{
 .customer-details-section{
     width: 60%;
     padding: 10px;
+    margin-left: 20%;
     /* justify-content: center; */
     border-radius: 10px;
     /* height: 300px; */
@@ -238,6 +250,7 @@ form>input{
 .model-replace{
     width: 60%;
     padding: 10px;
+    margin-left: 20%;
     /* justify-content: center; */
     border-radius: 10px;
     /* height: 300px; */
@@ -249,13 +262,17 @@ form>input{
     flex-direction: column;
 }
 .submit{
-    width: fit-content;
+   margin-top: 135px;
+   font-size: medium;
+   font-weight: 400;
+   
+    width: 160px;
     padding: 10px;
-    background-color: rgba(0, 0, 255, 0.658);
+    background-color: rgba(148, 40, 210, 0.702) ;
     color: white;
     border: none;
     border-radius: 10px;
-    margin-left: 20%; 
+    margin-left: 35%; 
 }
 .billing-Address-area{
     display: flex;
@@ -272,7 +289,7 @@ input[type="radio"]{
     display: none;
 }
 input[type="radio"]:checked +label{
-    background-color:#2b6ad6;
+    background-color: rgba(148, 40, 210, 0.702);
     border-radius: 2px;
 }
 .box{
@@ -283,4 +300,23 @@ input[type="radio"]:checked +label{
 }
 .align-center{
     text-align: center;
+}
+.formHeading{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    color: rgba(168, 119, 194, 0.702);
+}
+.beautifiedHeading{
+    margin-top: 20px;
+    text-align: center;
+    color:rgba(148, 40, 210, 0.702) ;
+    font-family: 'Times New Roman', Times, serif;
+}
+#discountDiv{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+   gap: 40px;
 }

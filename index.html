@@ -12,7 +12,7 @@
 <body>
 <div class="print-content" id="print-content">
     <div id ="main-container"class= "main-conatiner display-off">
-        <button class="print submit" id="print">Print</button>
+        <button class="print" id="print">Print</button>
         <h5> TAX INVOICE </h5> 
         <div class="company-details">
             <div class="company-deatils-left" id="company-details-left">
@@ -74,11 +74,11 @@
                         <span><b>MOTOR NO</b></span>
                         <span class="motor-no" id="mmotor"></span>
                     
-                        <span>CHASSIS NO:</span>
+                        <span><b>CHASSIS NO:</b></span>
                         <span class="chasisNo" id="chasisNumber"></span>
-                        <span>COLOR :</span><span class="colorname" id="colorname"></span>
+                        <span><b>COLOR :</b></span><span class="colorname" id="colorname"></span>
                         
-                        <span>Battery No</span><span class="battery-no" id="battery-number"></span>
+                        <span><b>Battery No</b></span><span class="battery-no" id="battery-number"></span>
                         <span id="battery1"></span>
                         <span id="battery2"></span><span id="battery3"></span>
                         <span id="battery4"></span>
@@ -151,11 +151,12 @@
   <!--  Here Form Section started -->
   <!-- -------------------------------------------- -->
     <section class="form-section" id="form-section">
+        <h2 class="formHeading">Yatri E Rickshaw Billing Section</h2>
         <form action="" class="main-form my-2" id="main-form">
-            <h3> Product Detail's</h3>
+            <h3 class="beautifiedHeading"> Product Details</h3>
         <div class="model-replace">
             <label for="invoiceNumber">Invoice Number</label>
-            <input  type="text" class="invoiceNumber" id="invoiceNumber">
+            <input placeholder="Enter Invoice Number"  type="text" class="invoiceNumber" id="invoiceNumber">
             <label for="invoiceDate">Invoice Date</label>
             <input required type="date" id="invoiceDate">
             <label for="modelName"> Model Name</label>
@@ -193,7 +194,7 @@
             <label for="qunatityPro">Quantity</label>
             <input type="number" name="qunatityPro" placeholder="Quantity of the vehicle" required >
         </div>
-            <h3> Customer's Details</h3>
+            <h3 class="beautifiedHeading"> Customer's Details</h3>
             <div class="customer-details-section">
                 <label for="customer-name"> Customer Name</label>
                 <input type="text" name="customer-name" placeholder="Enter the name of the customer" id="customer-name">
@@ -213,6 +214,7 @@
                 <label for="realDiscount">Discount</label>
                 <input type="Number" id="realDiscount" placeholder="Please Select the mode of Discount" >
                 <div id="discountDiv">
+                    Select:
                     <input type="radio" name="modeOfDiscount" value="Percentage" id="isPercentage">
                     <label class="material-symbols-outlined" for="isPercentage">percent</label>
                     <input checked type="radio" name="modeOfDiscount" value="Number" id="isNumber">
