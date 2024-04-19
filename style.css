@@ -9,7 +9,7 @@
     height: auto;
     /* overflow-y: scroll; */
     display: inline-block;
-    /* border: 2px solid black; */
+    border: 2px solid black;
 }
 .main-conatiner{
     padding-left: 5px;
